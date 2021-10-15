@@ -105,7 +105,7 @@ func Parsefile(filenPath string, bearer string, verbose bool) {
 	file.Close()
 }
 
-// getPresence request the Teams API to get additional details about the user with its mri
+// getPresence request the Teams API to get additional details about the user with its mri.
 func getPresence(mri string, bearer string, verbose bool) (string, string) {
 
 	var json_data = []byte(`[{"mri":"` + mri + `"}]`)
